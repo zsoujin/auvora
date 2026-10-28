@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
+*.icns binary
+# Preserve upstream notice formatting; do not rewrite legal texts for lint.
+src-tauri/binaries/licenses/** -whitespace

@@ -1,0 +1,12 @@
+{
+  "bundle": {
+    "resources": {
+      "binaries/yt-dlp.exe": "binaries/yt-dlp.exe",
+      "binaries/ffmpeg.exe": "binaries/ffmpeg.exe",
+      "binaries/ffprobe.exe": "binaries/ffprobe.exe",
+      "binaries/deno.exe": "binaries/deno.exe",
+      "binaries/licenses/": "licenses/",
+      "binaries/versions.json": "components.json"
+    }
+  }
+}

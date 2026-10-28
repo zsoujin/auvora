@@ -1,0 +1,38 @@
+{
+  "name": "auvora",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Akniyet Manas",
+  "license": "MIT",
+  "repository": "https://github.com/zsoujin/auvora.git",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "prettier --check src package.json tsconfig.json vite.config.ts",
+    "check:version": "node scripts/check-version.mjs",
+    "tauri": "tauri",
+    "desktop:dev": "tauri dev",
+    "desktop:build": "node scripts/preflight.mjs && tauri build --config src-tauri/tauri.release.conf.json --target x86_64-pc-windows-msvc -- --locked",
+    "format": "prettier --write src package.json tsconfig.json vite.config.ts"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0",
+    "@tauri-apps/plugin-dialog": "^2.4.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "prettier": "^3.9.10",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vitest": "^5.0.5"
+  }
+}

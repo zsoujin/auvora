@@ -1,0 +1,2492 @@
+[
+  {
+    "component": "@tauri-apps/api@2.12.4",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE-2.0",
+      "LICENSE-MIT",
+      "LICENSE.spdx"
+    ]
+  },
+  {
+    "component": "@tauri-apps/plugin-dialog@2.8.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE.spdx"
+    ]
+  },
+  {
+    "component": "lucide-react@0.468.0",
+    "license": "ISC",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "react@19.3.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "react-dom@19.3.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "scheduler@0.28.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "adler2@2.0.1",
+    "license": "0BSD OR MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-0BSD",
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "ahash@0.8.12",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "aho-corasick@1.1.5",
+    "license": "Unlicense OR MIT",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "alloc-no-stdlib@3.0.0",
+    "license": "BSD-3-Clause",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "alloc-stdlib@0.3.0",
+    "license": "BSD-3-Clause",
+    "noticeFiles": [
+      "supplemental/alloc-stdlib.txt"
+    ]
+  },
+  {
+    "component": "anyhow@1.0.104",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "atomic-waker@1.1.2",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT",
+      "LICENSE-THIRD-PARTY"
+    ]
+  },
+  {
+    "component": "autocfg@1.5.1",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "base64@0.22.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "base64@0.23.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "bit-set@0.8.0",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "bit-vec@0.8.0",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "bitflags@1.3.2",
+    "license": "MIT/Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "bitflags@2.13.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "block-buffer@0.10.4",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "brotli@9.0.0",
+    "license": "BSD-3-Clause AND MIT",
+    "noticeFiles": [
+      "LICENSE.BSD-3-Clause",
+      "LICENSE.MIT"
+    ]
+  },
+  {
+    "component": "brotli-decompressor@6.0.1",
+    "license": "BSD-3-Clause/MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "bs58@0.5.1",
+    "license": "MIT/Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "byteorder@1.5.0",
+    "license": "Unlicense OR MIT",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "bytes@1.12.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "camino@1.2.6",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "cargo_metadata@0.19.2",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "cargo_toml@1.0.1",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "cargo-platform@0.1.9",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "cc@1.9.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "cfb@0.14.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "cfg_aliases@0.2.2",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE",
+      "NOTICES.md"
+    ]
+  },
+  {
+    "component": "cfg-if@1.0.5",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "chacha20@0.10.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "chrono@0.4.45",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE.txt"
+    ]
+  },
+  {
+    "component": "cookie@0.18.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "cpufeatures@0.2.17",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "cpufeatures@0.3.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "crc32fast@1.5.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "crossbeam-channel@0.5.17",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT",
+      "LICENSE-THIRD-PARTY"
+    ]
+  },
+  {
+    "component": "crossbeam-utils@0.8.23",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "crypto-common@0.1.7",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "cssparser@0.37.0",
+    "license": "MPL-2.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "cssparser-macros@0.7.1",
+    "license": "MPL-2.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "ctor@1.0.13",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "darling@0.24.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "darling_core@0.24.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "darling_macro@0.24.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "defmt@1.2.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "defmt-macros@1.2.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "defmt-parser@1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "deranged@0.5.9",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-Apache",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "derive_more@2.1.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "derive_more-impl@2.1.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "digest@0.10.7",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "dirs@7.0.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "dirs-sys@0.5.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "displaydoc@0.2.7",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "dom_query@0.28.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "dpi@0.1.2",
+    "license": "Apache-2.0 AND MIT",
+    "noticeFiles": [
+      "LICENSE",
+      "LICENSE-LIBM-MIT"
+    ]
+  },
+  {
+    "component": "dtoa@1.0.11",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "dtoa-short@0.3.5",
+    "license": "MPL-2.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "dunce@1.0.5",
+    "license": "CC0-1.0 OR MIT-0 OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "dyn-clone@1.0.20",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "embed-resource@3.0.12",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "equivalent@1.0.3",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "erased-serde@0.4.10",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "fallible-iterator@0.3.0",
+    "license": "MIT/Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "fallible-streaming-iterator@0.1.9",
+    "license": "MIT/Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "fastrand@2.5.0",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "fdeflate@0.3.7",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "find-msvc-tools@0.1.15",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "flate2@1.1.10",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "fnv@1.0.7",
+    "license": "Apache-2.0 / MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "foldhash@0.2.0",
+    "license": "Zlib",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "form_urlencoded@1.2.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "futures-channel@0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "futures-core@0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "futures-io@0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "futures-macro@0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "futures-sink@0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "futures-task@0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "futures-util@0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "generic-array@0.14.7",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "getrandom@0.2.17",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "getrandom@0.3.4",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "getrandom@0.4.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "glob@0.3.4",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "hashbrown@0.12.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "hashbrown@0.14.5",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "hashbrown@0.17.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "hashlink@0.9.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "heck@0.5.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "hex@0.4.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "html5ever@0.39.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "http@1.5.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "http-body@1.1.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "http-body-util@0.1.5",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "http-range@0.1.6",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "httparse@1.10.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "hyper@1.12.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "hyper-rustls@0.27.10",
+    "license": "Apache-2.0 OR ISC OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-ISC",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "hyper-util@0.1.21",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "ico@0.6.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "icu_collections@2.4.0",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "icu_locale_core@2.4.0",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "icu_normalizer@2.4.0",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "icu_normalizer_data@2.4.0",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "icu_properties@2.4.0",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "icu_properties_data@2.4.0",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "icu_provider@2.4.0",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "ident_case@1.0.1",
+    "license": "MIT/Apache-2.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "idna@1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "idna_adapter@1.2.2",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "indexmap@1.9.3",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "indexmap@2.14.2",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "infer@0.22.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "ipnet@2.12.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "itoa@1.0.18",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "jiff@0.2.38",
+    "license": "Unlicense OR MIT",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "jiff-core@0.1.1",
+    "license": "Unlicense OR MIT",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "jiff-tzdb@0.1.9",
+    "license": "Unlicense OR MIT",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "jiff-tzdb-platform@0.1.3",
+    "license": "Unlicense OR MIT",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "json-patch@4.2.0",
+    "license": "MIT/Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "jsonptr@0.7.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "keyboard-types@0.8.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "libc@0.2.191",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "libsqlite3-sys@0.30.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "litemap@0.8.3",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "lock_api@0.4.14",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "log@0.4.34",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "lru-slab@0.1.3",
+    "license": "MIT OR Apache-2.0 OR Zlib",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT",
+      "LICENSE-ZLIB"
+    ]
+  },
+  {
+    "component": "markup5ever@0.39.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "memchr@2.8.3",
+    "license": "Unlicense OR MIT",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "mime@0.3.17",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "miniz_oxide@0.8.9",
+    "license": "MIT OR Zlib OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE",
+      "LICENSE-APACHE.md",
+      "LICENSE-MIT.md",
+      "LICENSE-ZLIB.md"
+    ]
+  },
+  {
+    "component": "miniz_oxide@0.9.1",
+    "license": "MIT OR Zlib OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE",
+      "LICENSE-APACHE.md",
+      "LICENSE-MIT.md",
+      "LICENSE-ZLIB.md"
+    ]
+  },
+  {
+    "component": "mio@1.2.4",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "muda@0.20.0",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT",
+      "LICENSE.spdx"
+    ]
+  },
+  {
+    "component": "new_debug_unreachable@1.0.6",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "num-conv@0.2.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-Apache",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "num-traits@0.2.19",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "once_cell@1.21.4",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "option-ext@0.2.0",
+    "license": "MPL-2.0",
+    "noticeFiles": [
+      "LICENSE.txt"
+    ]
+  },
+  {
+    "component": "parking_lot@0.12.5",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "parking_lot_core@0.9.12",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "percent-encoding@2.3.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "phf@0.13.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "phf_codegen@0.13.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "phf_generator@0.13.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "phf_macros@0.13.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "phf_shared@0.13.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "pin-project-lite@0.2.17",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "pkg-config@0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "plist@1.10.3",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENCE"
+    ]
+  },
+  {
+    "component": "png@0.18.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "potential_utf@0.1.6",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "powerfmt@0.2.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-Apache",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "precomputed-hash@0.1.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "proc-macro2@1.0.107",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "quick-xml@0.42.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE-MIT.md"
+    ]
+  },
+  {
+    "component": "quinn@0.11.12",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "quinn-proto@0.11.19",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "quinn-udp@0.5.16",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "quote@1.0.47",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "rand@0.10.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "rand_core@0.10.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "rand_pcg@0.10.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "raw-window-handle@0.6.2",
+    "license": "MIT OR Apache-2.0 OR Zlib",
+    "noticeFiles": [
+      "LICENSE-APACHE.md",
+      "LICENSE-MIT.md",
+      "LICENSE-ZLIB.md"
+    ]
+  },
+  {
+    "component": "ref-cast@1.0.27",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "ref-cast-impl@1.0.27",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "regex@1.13.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "regex-automata@0.4.18",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "regex-syntax@0.8.11",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "reqwest@0.12.28",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "rfd@0.15.4",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "rfd@0.16.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "ring@0.17.14",
+    "license": "Apache-2.0 AND ISC",
+    "noticeFiles": [
+      "LICENSE",
+      "LICENSE-BoringSSL",
+      "LICENSE-other-bits"
+    ]
+  },
+  {
+    "component": "rusqlite@0.32.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "rustc_version@0.4.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "rustc-hash@2.1.3",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "rustls@0.23.46",
+    "license": "Apache-2.0 OR ISC OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-ISC",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "rustls-pki-types@1.15.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "rustls-webpki@0.103.16",
+    "license": "ISC",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "ryu@1.0.23",
+    "license": "Apache-2.0 OR BSL-1.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-BOOST"
+    ]
+  },
+  {
+    "component": "same-file@1.0.6",
+    "license": "Unlicense/MIT",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "schemars@0.8.22",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "schemars@0.9.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "schemars@1.2.3",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "schemars_derive@0.8.22",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "scopeguard@1.2.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "selectors@0.38.0",
+    "license": "MPL-2.0",
+    "noticeFiles": [
+      "supplemental/MPL-2.0.txt"
+    ]
+  },
+  {
+    "component": "semver@1.0.28",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde@1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde_core@1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde_derive@1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde_derive_internals@0.29.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde_json@1.0.154",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde_repr@0.1.21",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde_spanned@1.1.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde_urlencoded@0.7.1",
+    "license": "MIT/Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde_with@3.24.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde_with_macros@3.24.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serde-untagged@0.1.9",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serialize-to-javascript@0.1.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "serialize-to-javascript-impl@0.1.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "servo_arc@0.4.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "sha2@0.10.9",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "shlex@2.0.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "simd-adler32@0.3.10",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "component": "siphasher@1.0.4",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "slab@0.4.12",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "smallvec@1.16.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "socket2@0.6.5",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "softbuffer@0.4.8",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "stable_deref_trait@1.2.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "static_vcruntime@3.0.0",
+    "license": "MIT OR Apache-2.0 OR Zlib",
+    "noticeFiles": [
+      "LICENSE",
+      "LICENSE-APACHE",
+      "LICENSE-MIT",
+      "LICENSE-ZLIB"
+    ]
+  },
+  {
+    "component": "string_cache@0.9.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "string_cache_codegen@0.6.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "strsim@0.11.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "subtle@2.6.1",
+    "license": "BSD-3-Clause",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "syn@2.0.119",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "syn@3.0.9",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "sync_wrapper@1.0.2",
+    "license": "Apache-2.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "synstructure@0.14.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tao@0.37.1",
+    "license": "Apache-2.0",
+    "noticeFiles": [
+      "LICENSE",
+      "LICENSE.spdx"
+    ]
+  },
+  {
+    "component": "tauri@2.12.5",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE-2.0",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tauri-build@2.7.4",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE-2.0",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tauri-codegen@2.7.4",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE-2.0",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tauri-macros@2.7.4",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE-2.0",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tauri-plugin@2.7.2",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "supplemental/tauri-plugin-MIT.txt",
+      "supplemental/tauri-plugin-APACHE.txt"
+    ]
+  },
+  {
+    "component": "tauri-plugin-dialog@2.8.3",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE.spdx",
+      "LICENSE_APACHE-2.0",
+      "LICENSE_MIT"
+    ]
+  },
+  {
+    "component": "tauri-plugin-fs@2.7.1",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE.spdx",
+      "LICENSE_APACHE-2.0",
+      "LICENSE_MIT"
+    ]
+  },
+  {
+    "component": "tauri-runtime@2.12.2",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE-2.0",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tauri-runtime-wry@2.12.3",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE-2.0",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tauri-utils@2.10.2",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE-2.0",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tauri-winres@0.3.7",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tempfile@3.27.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tendril@0.5.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "thiserror@2.0.21",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "thiserror-impl@2.0.21",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "time@0.3.55",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-Apache",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "time-core@0.1.9",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-Apache",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "time-macros@0.2.32",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-Apache",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tinystr@0.8.5",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tinyvec@1.13.3",
+    "license": "Zlib OR Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE.md",
+      "LICENSE-MIT.md",
+      "LICENSE-ZLIB.md"
+    ]
+  },
+  {
+    "component": "tokio@1.54.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tokio-macros@2.7.2",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tokio-rustls@0.26.6",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tokio-util@0.7.20",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "toml@1.1.8+spec-1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "toml_datetime@1.1.2+spec-1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "toml_parser@1.1.5+spec-1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "toml_writer@1.1.3+spec-1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "tower@0.5.3",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tower-http@0.6.11",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tower-layer@0.3.3",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tower-service@0.3.3",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tracing@0.1.44",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tracing-attributes@0.1.31",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tracing-core@0.1.36",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "tray-icon@0.25.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT",
+      "LICENSE.spdx"
+    ]
+  },
+  {
+    "component": "try-lock@0.2.5",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "typeid@1.0.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "typenum@1.20.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE",
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "unicode-ident@1.0.27",
+    "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT",
+      "LICENSE-UNICODE"
+    ]
+  },
+  {
+    "component": "unicode-segmentation@1.13.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "untrusted@0.9.0",
+    "license": "ISC",
+    "noticeFiles": [
+      "LICENSE.txt"
+    ]
+  },
+  {
+    "component": "url@2.5.8",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "urlpattern@0.6.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "utf8_iter@1.0.4",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "uuid@1.28.0",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "vcpkg@0.2.15",
+    "license": "MIT/Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "version_check@0.9.5",
+    "license": "MIT/Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "vswhom@0.1.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "vswhom-sys@0.1.3",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "walkdir@2.5.0",
+    "license": "Unlicense/MIT",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "want@0.3.2",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "web_atoms@0.2.6",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "web-time@1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "webpki-roots@1.0.10",
+    "license": "CDLA-Permissive-2.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "webview2-com@0.39.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "supplemental/webview2-com.txt"
+    ]
+  },
+  {
+    "component": "webview2-com-macros@0.8.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "supplemental/webview2-com-macros.txt"
+    ]
+  },
+  {
+    "component": "webview2-com-sys@0.39.1",
+    "license": "MIT",
+    "noticeFiles": [
+      "supplemental/webview2-com.txt"
+    ]
+  },
+  {
+    "component": "winapi-util@0.1.11",
+    "license": "Unlicense OR MIT",
+    "noticeFiles": [
+      "COPYING",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "window-vibrancy@0.8.1",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT",
+      "LICENSE.spdx"
+    ]
+  },
+  {
+    "component": "windows@0.62.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows_x86_64_msvc@0.52.6",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows_x86_64_msvc@0.53.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-collections@0.3.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-core@0.62.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-future@0.3.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-implement@0.60.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-interface@0.59.3",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-link@0.2.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-numerics@0.3.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-result@0.4.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-strings@0.5.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-sys@0.59.0",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-sys@0.60.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-sys@0.61.2",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-targets@0.52.6",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-targets@0.53.5",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-threading@0.2.1",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "windows-version@0.1.7",
+    "license": "MIT OR Apache-2.0",
+    "noticeFiles": [
+      "license-apache-2.0",
+      "license-mit"
+    ]
+  },
+  {
+    "component": "winnow@1.0.4",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "winreg@0.56.0",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "writeable@0.6.4",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "wry@0.57.0",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT",
+      "LICENSE.spdx"
+    ]
+  },
+  {
+    "component": "yoke@0.8.4",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "yoke-derive@0.8.4",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "zerocopy@0.8.63",
+    "license": "BSD-2-Clause OR Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-BSD",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "zerofrom@0.1.8",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "zerofrom-derive@0.1.8",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "zeroize@1.9.1",
+    "license": "Apache-2.0 OR MIT",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT"
+    ]
+  },
+  {
+    "component": "zerotrie@0.2.5",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "zerovec@0.11.9",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "zerovec-derive@0.11.7",
+    "license": "Unicode-3.0",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "zlib-rs@0.6.8",
+    "license": "Zlib",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "component": "zmij@1.0.23",
+    "license": "MIT",
+    "noticeFiles": [
+      "LICENSE-MIT"
+    ]
+  }
+]
