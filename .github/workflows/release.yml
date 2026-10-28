@@ -1,0 +1,54 @@
+name: Prepare release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+      - run: npm ci
+      - name: Verify tag and package versions
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: node scripts/check-version.mjs "$env:RELEASE_TAG"
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test
+      - run: cargo test --manifest-path src-tauri/Cargo.toml --locked
+      - run: ./scripts/prepare-components.ps1
+      - run: node scripts/license-notices.mjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/collect-mpl-sources.py
+      - run: npm run desktop:build
+      - name: Collect installer and checksums
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Path release/artifacts -Force | Out-Null
+          Copy-Item src-tauri/target/x86_64-pc-windows-msvc/release/bundle/nsis/*-setup.exe release/artifacts/
+          Copy-Item src-tauri/binaries/versions.json release/artifacts/components.json
+          Copy-Item docs/limitations.md release/artifacts/LIMITATIONS.md
+          Get-ChildItem release/artifacts -File | ForEach-Object {
+            $hash = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLower()
+            "$hash  $($_.Name)"
+          } | Set-Content release/artifacts/SHA256SUMS.txt -Encoding ascii
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-release-review
+          path: release/artifacts/
+          if-no-files-found: error
+          retention-days: 14
+      # Publication is a separate owner action after reviewing source obligations,
+      # acceptance evidence and these exact hashes. This workflow has no write token.
