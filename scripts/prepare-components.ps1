@@ -32,7 +32,9 @@ $sources = @{
 foreach ($name in $sources.Keys) { Assert-Hash $sources[$name] $manifest.files.$name }
 foreach ($name in $sources.Keys) {
     $destination = Join-Path $bin $name
-    if ([String]::Compare((Resolve-Path -LiteralPath $sources[$name]).Path, (Resolve-Path -LiteralPath $destination).Path, $true) -ne 0) {
+    $sourceFullPath = [IO.Path]::GetFullPath($sources[$name])
+    $destinationFullPath = [IO.Path]::GetFullPath($destination)
+    if ([String]::Compare($sourceFullPath, $destinationFullPath, $true) -ne 0) {
         Copy-Item -LiteralPath $sources[$name] -Destination $destination -Force
     }
 }
