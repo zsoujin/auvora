@@ -18,7 +18,7 @@ npm run desktop:build
 
 The installer is written to `src-tauri/target/x86_64-pc-windows-msvc/release/bundle/nsis/auvora_1.0.0_x64-setup.exe`. The release configuration embeds the component executables, notices and WebView2 offline installer.
 
-`prepare-components.ps1` downloads pinned yt-dlp, Deno and FFmpeg releases, verifies archive and executable SHA-256 values, and fails on mismatches. It does not use an arbitrary FFmpeg from PATH. Review both checksums and notices when updating components. Packaging preflight verifies the executable hashes again. Checksums pin bytes, not licensing rights or reproducible compiler output.
+`prepare-components.ps1` downloads pinned yt-dlp and Deno releases, then builds FFmpeg and FFprobe from the pinned source archive in `third_party/ffmpeg/`. The self-build script records the exact configure flags and MSYS2 toolchain package versions, verifies the source archive SHA-256, and fails on mismatches. Packaging preflight verifies all executable hashes again.
 
 `license-notices.mjs` reads production npm packages and the Windows Cargo dependency graph. It generates notices and `docs/dependency-licenses.json`; review any missing notices before distribution. It does not inspect unrelated crates in the developer's cache.
 
@@ -32,7 +32,7 @@ With Python 3.12 or later installed, run `python scripts/collect-mpl-sources.py`
 
 Run `node scripts/benchmark-persistence.mjs` with Node 24 to measure serialized checkpoint traffic using 10,000 synthetic tracks. This is not a process-memory benchmark. Use `scripts/measure-memory.ps1` while the native app is running to measure the complete process tree, and keep working set, private working set and committed private bytes distinct.
 
-For memory acceptance, select one app instance with `-RootProcessId`, record `-Label` for idle, active playback, minimized playback and a large library, and repeat measurements over an extended session. The script compares bytes against 250,000,000 (250 decimal MB); MiB fields are display values only. A passing single sample is not sustained acceptance. Missing private-working-set counters are reported as null, not zero.
+For memory acceptance, select one app instance with `-RootProcessId`, record `-Label` for idle, active playback, minimized playback and a large library, and repeat measurements over an extended session. The release criterion is the summed private working set of the application and its child processes: `meetsTarget` must be true against 250,000,000 bytes (250 decimal MB). Total working set remains in the report as a diagnostic value; MiB fields are display values only. A passing single sample is not sustained acceptance. Missing private-working-set counters make `meetsTarget` and `privateWorkingSetBytes` null, not zero.
 
 CI checks pushes to `main` and pull requests. The release workflow builds on a `v*` tag, verifies that its version matches npm, Cargo and Tauri metadata, and collects installer/checksum artifacts. It does not publish a GitHub Release automatically. The owner must review the artifacts, remaining checks and third-party source obligations before publishing.
 

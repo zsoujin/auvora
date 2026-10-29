@@ -17,14 +17,17 @@ function Fetch([string]$Url, [string]$Name, [string]$Hash) {
 }
 $yt = Fetch 'https://github.com/yt-dlp/yt-dlp/releases/download/2026.10.21/yt-dlp.exe' 'yt-dlp.exe' $manifest.files.'yt-dlp.exe'
 $deno = Fetch 'https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-pc-windows-msvc.zip' 'deno-2.9.8.zip' 'cba84b26e0df5ae7f74fc66b86a95b866872a86292ebd84fa1e959927edd93bf'
-$ffmpeg = Fetch 'https://github.com/GyanD/codexffmpeg/releases/download/8.1.1/ffmpeg-8.1.1-full_build.zip' 'ffmpeg-8.1.1.zip' '49b28c5f16addd40239a66949973458769b7056fb7752c30ac0d53389d09a552'
+$buildScript = Join-Path $root 'scripts/build-ffmpeg.ps1'
+$buildArgs = @('-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', $buildScript)
+if ($env:MSYS2_LOCATION) { $buildArgs += @('-Msys2Root', $env:MSYS2_LOCATION) }
+& powershell.exe @buildArgs
+if ($LASTEXITCODE -ne 0) { throw "Self-built FFmpeg failed with exit code $LASTEXITCODE" }
 Expand-Archive -LiteralPath $deno -DestinationPath (Join-Path $cache 'deno') -Force
-Expand-Archive -LiteralPath $ffmpeg -DestinationPath (Join-Path $cache 'ffmpeg') -Force
 $sources = @{
     'yt-dlp.exe' = $yt
     'deno.exe' = Join-Path $cache 'deno/deno.exe'
-    'ffmpeg.exe' = Join-Path $cache 'ffmpeg/ffmpeg-8.1.1-full_build/bin/ffmpeg.exe'
-    'ffprobe.exe' = Join-Path $cache 'ffmpeg/ffmpeg-8.1.1-full_build/bin/ffprobe.exe'
+    'ffmpeg.exe' = Join-Path $bin 'ffmpeg.exe'
+    'ffprobe.exe' = Join-Path $bin 'ffprobe.exe'
 }
 foreach ($name in $sources.Keys) { Assert-Hash $sources[$name] $manifest.files.$name }
 foreach ($name in $sources.Keys) { Copy-Item -LiteralPath $sources[$name] -Destination (Join-Path $bin $name) -Force }

@@ -17,7 +17,7 @@ Audio playback uses the WebView's audio element. FFprobe reads metadata; FFmpeg 
 
 ## Local data
 
-SQLite is stored under Tauri's application data directory, normally `%APPDATA%\app.personalaudio.desktop\library.sqlite3`. The database uses WAL mode and stores application state and download history. Cached artwork and an updated yt-dlp executable are under that data directory. Downloads default to `Music\auvora`; imported files remain in their original locations.
+SQLite is stored under Tauri's application data directory, normally `%APPDATA%\app.personalaudio.desktop\library.sqlite3`. The database uses WAL mode and stores application state and download history. Cached artwork is under that data directory. Downloads default to `Music\auvora`; imported files remain in their original locations.
 
 The legacy application identifier intentionally preserves existing installations' data. The product name, executable and public documentation use **auvora**.
 
@@ -27,6 +27,6 @@ Playback checkpoints send a track index, ID and position when the rest of the im
 
 The frontend calls registered Rust commands through Tauri IPC. The asset protocol begins with an empty scope and grants individual local files during library operations. The content security policy restricts remote frontend resources. User-selected files and restored backups are inputs, not executable configuration.
 
-Download URLs are normalized to single YouTube video URLs. yt-dlp runs with configuration and plugin discovery disabled. Its updater downloads release information and verifies SHA-256 before replacement. Release-component integrity and license compliance are separate checks: a correct hash does not establish redistribution rights.
+Download URLs are normalized to single YouTube video URLs. yt-dlp runs with configuration and plugin discovery disabled. The bundled downloader is updated only through reviewed auvora releases; the app does not replace it from an unsigned same-channel checksum manifest. Release-component integrity and license compliance are separate checks: a correct hash does not establish redistribution rights.
 
 The browser preview uses browser storage and has limited native-file functionality. It is a development mode, not the Windows installation.

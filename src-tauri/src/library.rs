@@ -165,7 +165,11 @@ fn local_drive(path: &Path) -> Result<u8> {
     let drive = match components.next() {
         Some(Component::Prefix(prefix)) => match prefix.kind() {
             Prefix::Disk(drive) | Prefix::VerbatimDisk(drive) => drive,
-            _ => return Err("Network and device paths are not supported. Choose a local audio file.".into()),
+            _ => {
+                return Err(
+                    "Network and device paths are not supported. Choose a local audio file.".into(),
+                )
+            }
         },
         _ => return Err("Choose an absolute local file path".into()),
     };
@@ -244,9 +248,7 @@ pub async fn probe(app: &tauri::AppHandle, path: &Path) -> Result<Track> {
         ));
     }
     let info: serde_json::Value = serde_json::from_slice(&output.stdout).map_err(err)?;
-    let streams = info["streams"]
-        .as_array()
-        .ok_or("No audio streams found")?;
+    let streams = info["streams"].as_array().ok_or("No audio streams found")?;
     if !streams.iter().any(|v| v["codec_type"] == "audio") {
         return Err("File contains no audio".into());
     }
@@ -362,7 +364,12 @@ pub fn save_state(app: tauri::AppHandle, json: String) -> Result<()> {
     tx.commit().map_err(err)
 }
 #[tauri::command]
-pub fn save_position(app: tauri::AppHandle, index: usize, id: String, position: f64) -> Result<bool> {
+pub fn save_position(
+    app: tauri::AppHandle,
+    index: usize,
+    id: String,
+    position: f64,
+) -> Result<bool> {
     let state = app.state::<Store>();
     let db = state.db.lock().map_err(err)?;
     update_position(&db, index, &id, position)
@@ -464,6 +471,7 @@ pub async fn choose_folder(app: tauri::AppHandle) -> Result<Option<String>> {
             .map_err(err)?
             .to_string_lossy()
             .into_owned();
+        require_local_path(Path::new(&p))?;
         app.state::<Store>().db.lock().map_err(err)?.execute("INSERT INTO state(key,value) VALUES('folder',?1) ON CONFLICT(key) DO UPDATE SET value=excluded.value",[&p]).map_err(err)?;
         Ok(Some(p))
     } else {
@@ -515,9 +523,11 @@ mod tests {
     #[test]
     fn position_update_preserves_metadata_and_rejects_stale_index() {
         let db = Connection::open_in_memory().unwrap();
-        db.execute_batch("CREATE TABLE state(key TEXT PRIMARY KEY,value TEXT NOT NULL)").unwrap();
+        db.execute_batch("CREATE TABLE state(key TEXT PRIMARY KEY,value TEXT NOT NULL)")
+            .unwrap();
         let original = serde_json::json!({"tracks":[{"id":"a","position":0,"favorite":true},{"id":"b","position":4}],"queue":[{"track":"b"}]}).to_string();
-        db.execute("INSERT INTO state VALUES('library',?1)", [&original]).unwrap();
+        db.execute("INSERT INTO state VALUES('library',?1)", [&original])
+            .unwrap();
         assert!(update_position(&db, 0, "a", 12.5).unwrap());
         assert!(!update_position(&db, 0, "b", 99.0).unwrap());
         assert!(!update_position(&db, 99, "a", 99.0).unwrap());
@@ -532,10 +542,22 @@ mod tests {
     #[cfg(windows)]
     #[test]
     fn backup_paths_reject_network_device_and_relative_forms() {
-        for path in [r"\\server\share\track.mp3", r"\\?\UNC\server\share\track.mp3", r"\\.\pipe\audio.mp3", r"//server/share/track.mp3", r"C:track.mp3", r"\track.mp3", "track.mp3"] {
+        for path in [
+            r"\\server\share\track.mp3",
+            r"\\?\UNC\server\share\track.mp3",
+            r"\\.\pipe\audio.mp3",
+            r"//server/share/track.mp3",
+            r"C:track.mp3",
+            r"\track.mp3",
+            "track.mp3",
+        ] {
             assert!(local_drive(Path::new(path)).is_err(), "{path}");
         }
-        for path in [r"C:\Music\track.mp3", r"\\?\C:\Music\track.mp3", "C:/Music/track.mp3"] {
+        for path in [
+            r"C:\Music\track.mp3",
+            r"\\?\C:\Music\track.mp3",
+            "C:/Music/track.mp3",
+        ] {
             assert_eq!(local_drive(Path::new(path)).unwrap(), b'C');
         }
     }

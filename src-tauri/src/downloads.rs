@@ -86,7 +86,22 @@ pub fn ytdlp(app: &tauri::AppHandle) -> Result<Command> {
     .arg(format!("deno:{}", binary(app, "deno.exe")?.display()));
     Ok(cmd)
 }
+fn allowed_fetch_host(host: &str) -> bool {
+    matches!(
+        host,
+        "api.github.com"
+            | "github.com"
+            | "objects.githubusercontent.com"
+            | "release-assets.githubusercontent.com"
+            | "i.ytimg.com"
+            | "i9.ytimg.com"
+    )
+}
 pub async fn fetch(url: &str, limit: usize) -> Result<Vec<u8>> {
+    let requested = url::Url::parse(url).map_err(err)?;
+    if requested.scheme() != "https" || !allowed_fetch_host(requested.host_str().unwrap_or("")) {
+        return Err("Unsafe fetch target".into());
+    }
     let client = reqwest::Client::builder()
         .user_agent("auvora/1.0")
         .timeout(std::time::Duration::from_secs(180))
@@ -99,7 +114,9 @@ pub async fn fetch(url: &str, limit: usize) -> Result<Vec<u8>> {
         .map_err(err)?
         .error_for_status()
         .map_err(err)?;
-    if response.url().scheme() != "https" {
+    if response.url().scheme() != "https"
+        || !allowed_fetch_host(response.url().host_str().unwrap_or(""))
+    {
         return Err("Unsafe redirect".into());
     }
     if response.content_length().unwrap_or(0) > limit as u64 {
@@ -133,10 +150,15 @@ async fn thumbnail(app: &tauri::AppHandle, url: &str, source: &str) -> Option<St
         }
     }
     let bytes = fetch(url, 5_000_000).await.ok()?;
-    let extension = if bytes.starts_with(&[0xff, 0xd8]) { "jpg" }
-        else if bytes.starts_with(b"RIFF") && bytes.get(8..12) == Some(b"WEBP") { "webp" }
-        else if bytes.starts_with(b"\x89PNG\r\n\x1a\n") { "png" }
-        else { return None; };
+    let extension = if bytes.starts_with(&[0xff, 0xd8]) {
+        "jpg"
+    } else if bytes.starts_with(b"RIFF") && bytes.get(8..12) == Some(b"WEBP") {
+        "webp"
+    } else if bytes.starts_with(b"\x89PNG\r\n\x1a\n") {
+        "png"
+    } else {
+        return None;
+    };
     let path = dir.join(format!("{key}.{extension}"));
     atomic_write(&path, &bytes).ok()?;
     app.asset_protocol_scope().allow_file(&path).ok()?;
@@ -169,10 +191,7 @@ pub async fn inspect_video(app: tauri::AppHandle, url: String) -> Result<Preview
     Ok(Preview {
         url,
         title: info["title"].as_str().unwrap_or("Audio track").into(),
-        artist: info["uploader"]
-            .as_str()
-            .unwrap_or("Unknown artist")
-            .into(),
+        artist: info["uploader"].as_str().unwrap_or("Unknown artist").into(),
         duration: info["duration"].as_f64().unwrap_or(0.),
         artwork,
     })
@@ -337,59 +356,6 @@ pub async fn component_versions(app: tauri::AppHandle) -> Result<serde_json::Val
     }
     Ok(v.into())
 }
-#[tauri::command]
-pub async fn update_downloader(app: tauri::AppHandle) -> Result<String> {
-    if !app.state::<Store>().jobs.lock().map_err(err)?.is_empty() {
-        return Err("Wait for active downloads to finish".into());
-    }
-    let metadata = fetch(
-        "https://api.github.com/repos/yt-dlp/yt-dlp/releases/latest",
-        2_000_000,
-    )
-    .await?;
-    let release: serde_json::Value = serde_json::from_slice(&metadata).map_err(err)?;
-    let tag = release["tag_name"].as_str().ok_or("Version not found")?;
-    if !tag
-        .bytes()
-        .all(|b| b.is_ascii_alphanumeric() || b == b'.' || b == b'-' || b == b'_')
-    {
-        return Err("Invalid version".into());
-    }
-    let base = format!("https://github.com/yt-dlp/yt-dlp/releases/download/{tag}");
-    let sums = fetch(&format!("{base}/SHA2-256SUMS"), 1_000_000).await?;
-    let sums = String::from_utf8(sums).map_err(err)?;
-    let expected = sums
-        .lines()
-        .find_map(|l| {
-            let mut parts = l.split_whitespace();
-            let hash = parts.next()?;
-            if parts.next()? == "yt-dlp.exe" {
-                Some(hash.to_string())
-            } else {
-                None
-            }
-        })
-        .ok_or("Checksum not found")?;
-    let bytes = fetch(&format!("{base}/yt-dlp.exe"), 100_000_000).await?;
-    if format!("{:x}", Sha256::digest(&bytes)) != expected {
-        return Err("Update checksum does not match".into());
-    }
-    let dir = app.path().app_data_dir().map_err(err)?.join("components");
-    fs::create_dir_all(&dir).map_err(err)?;
-    let candidate = dir.join("yt-dlp.candidate.exe");
-    atomic_write(&candidate, &bytes)?;
-    let output = command(&candidate)
-        .arg("--version")
-        .output()
-        .await
-        .map_err(err)?;
-    if !output.status.success() {
-        return Err("The updated downloader could not start".into());
-    }
-    atomic_write(&dir.join("yt-dlp.exe"), &bytes)?;
-    let _ = fs::remove_file(candidate);
-    Ok(tag.into())
-}
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -417,5 +383,13 @@ mod tests {
         ] {
             assert!(normalize_url(url).is_err());
         }
+    }
+    #[test]
+    fn fetch_host_allowlist_accepts_expected_cdns_only() {
+        assert!(allowed_fetch_host("api.github.com"));
+        assert!(allowed_fetch_host("release-assets.githubusercontent.com"));
+        assert!(allowed_fetch_host("i.ytimg.com"));
+        assert!(!allowed_fetch_host("evil.example"));
+        assert!(!allowed_fetch_host("github.com.evil.test"));
     }
 }

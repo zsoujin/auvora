@@ -12,8 +12,8 @@ use tauri::{Emitter, Manager};
 use tokio::{process::Command, sync::watch};
 mod downloads;
 mod library;
-mod process;
 mod memory;
+mod process;
 use downloads::*;
 use library::*;
 struct Store {
@@ -78,5 +78,5 @@ fn main() {
     let dir=app.path().app_data_dir()?;fs::create_dir_all(&dir)?;let db=Connection::open(dir.join("library.sqlite3"))?;
     db.execute_batch("PRAGMA journal_mode=WAL; PRAGMA synchronous=FULL; PRAGMA busy_timeout=5000; CREATE TABLE IF NOT EXISTS state(key TEXT PRIMARY KEY,value TEXT NOT NULL); CREATE TABLE IF NOT EXISTS downloads(id TEXT PRIMARY KEY,status TEXT NOT NULL,payload TEXT NOT NULL,consumed INTEGER NOT NULL DEFAULT 0); UPDATE downloads SET status='failed',payload=json_set(payload,'$.status','failed','$.detail','Download interrupted when the app closed. Select Retry.') WHERE status IN ('queued','downloading');")?;
     app.manage(Store{db:Mutex::new(db),allowed:Mutex::new(HashSet::new()),jobs:Mutex::new(HashMap::new())});Ok(())
-}).invoke_handler(tauri::generate_handler![load_state,save_state,save_position,import_audio,relink_audio,authorize_tracks,get_folder,choose_folder,reveal_audio,delete_audio,write_backup,read_backup,inspect_video,list_downloads,start_download,cancel_download,component_versions,update_downloader]).run(tauri::generate_context!()).expect("Failed to start auvora");
+}).invoke_handler(tauri::generate_handler![load_state,save_state,save_position,import_audio,relink_audio,authorize_tracks,get_folder,choose_folder,reveal_audio,delete_audio,write_backup,read_backup,inspect_video,list_downloads,start_download,cancel_download,component_versions]).run(tauri::generate_context!()).expect("Failed to start auvora");
 }

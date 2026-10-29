@@ -22,6 +22,6 @@ Only download material you are authorized to download. Availability depends on t
 
 ## Settings and backups
 
-Settings contains theme, download folder, component versions, a yt-dlp update action and JSON backup/restore. Backups include metadata, local paths, playlists, queue and progress; they do **not** include audio. Copy audio separately. Backups and download histories can contain private filenames and URLs; do not attach them to public issues without reviewing their contents.
+Settings contains theme, download folder, component versions and JSON backup/restore. Downloader binaries are updated with reviewed auvora releases rather than by an in-app unsigned manifest update. Backups include metadata, local paths, playlists, queue and progress; they do **not** include audio. Copy audio separately. Backups and download histories can contain private filenames and URLs; do not attach them to public issues without reviewing their contents.
 
 If a file has moved, use the track menu to relink it. Changing the download folder affects new downloads and does not move existing files. Local playback does not require an internet connection; downloading and component updates do.

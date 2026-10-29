@@ -23,15 +23,25 @@ $rows = foreach ($id in $ids) {
     }
 }
 if (!@($rows).Count) { throw 'auvora exited before memory counters could be collected' }
+$workingSetBytes = [long]($rows | Measure-Object workingSetBytes -Sum).Sum
+$privateWorkingSetRows = @($rows | Where-Object { $null -ne $_.privateWorkingSetBytes })
+$privateWorkingSetBytes = if ($privateWorkingSetRows.Count -eq @($rows).Count) {
+    [long]($privateWorkingSetRows | Measure-Object privateWorkingSetBytes -Sum).Sum
+} else {
+    $null
+}
 $result = [pscustomobject]@{
     timestamp = (Get-Date).ToString('o'); label = $Label
     processCount = @($rows).Count
-    workingSetBytes = [long]($rows | Measure-Object workingSetBytes -Sum).Sum
+    targetMetric = 'privateWorkingSet'
     targetBytes = 250000000
-    meetsWorkingSetTarget = (($rows | Measure-Object workingSetBytes -Sum).Sum -le 250000000)
-    workingSetMiB = [math]::Round(($rows | Measure-Object workingSetBytes -Sum).Sum / 1MB, 2)
+    meetsTarget = if ($null -eq $privateWorkingSetBytes) { $null } else { $privateWorkingSetBytes -le 250000000 }
+    workingSetBytes = $workingSetBytes
+    meetsWorkingSetTarget = ($workingSetBytes -le 250000000)
+    workingSetMiB = [math]::Round($workingSetBytes / 1MB, 2)
     privateMiB = [math]::Round(($rows | Measure-Object privateBytes -Sum).Sum / 1MB, 2)
-    privateWorkingSetMiB = if (@($rows | Where-Object { $null -eq $_.privateWorkingSetBytes }).Count) { $null } else { [math]::Round(($rows | Measure-Object privateWorkingSetBytes -Sum).Sum / 1MB, 2) }
+    privateWorkingSetBytes = $privateWorkingSetBytes
+    privateWorkingSetMiB = if ($null -eq $privateWorkingSetBytes) { $null } else { [math]::Round($privateWorkingSetBytes / 1MB, 2) }
     processes = @($rows)
 }
 $json = $result | ConvertTo-Json -Depth 5

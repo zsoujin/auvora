@@ -470,18 +470,6 @@ export default function App() {
       setBusy("");
     }
   };
-  const updateDownloader = async () => {
-    try {
-      setBusy("update");
-      const version = await invoke<string>("update_downloader");
-      setNotice(`Downloader updated to ${version}`);
-      setVersions(await invoke("component_versions"));
-    } catch (e) {
-      report(e);
-    } finally {
-      setBusy("");
-    }
-  };
   const remove = async (id: string) => {
     try {
       const ok = desktop
@@ -1319,20 +1307,8 @@ export default function App() {
                         {name}: {version}
                       </p>
                     ))}
-                    <button
-                      disabled={
-                        !!busy ||
-                        tasks.some((t) =>
-                          ["queued", "downloading"].includes(t.status),
-                        )
-                      }
-                      onClick={() => void updateDownloader()}
-                    >
-                      Update downloader
-                    </button>
                     <p className="tiny muted">
-                      Downloads from the official yt-dlp GitHub repository and
-                      verifies the SHA-256 checksum.
+                      The downloader is updated with reviewed auvora releases.
                     </p>
                   </>
                 )}

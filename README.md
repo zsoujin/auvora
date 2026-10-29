@@ -46,4 +46,4 @@ Use the issue templates for bugs and feature proposals. Read [CONTRIBUTING.md](C
 
 Application source and the owner-supplied logo are licensed under MIT, copyright Akniyet Manas. Dependencies and bundled executables retain their own licenses; see [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Redistribution review of the installer remains a release gate.
 
-Only download content you are authorized to download. Source availability and codec support vary. The summed 250 MB working-set target has not been met; clean-machine release acceptance remains pending.
+Only download content you are authorized to download. Source availability and codec support vary. The 250 MB private-working-set target is measured across the application process tree; total working set is reported separately for WebView2 diagnostics.
