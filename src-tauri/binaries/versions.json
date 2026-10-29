@@ -3,9 +3,9 @@
   "yt_dlp": "2026.10.21",
   "files": {
     "deno.exe": "924397800533d3eb0ed0c889b20ad70e18b970d93acd8135bc043f425e528266",
-    "ffprobe.exe": "642f479c518fddcd2e8c474c060da46b8d1a4cf5eb5caec06ee7246d1133e075",
+    "ffprobe.exe": "60d25c3130d934d542adefa3feff05a819e1716c571d76f29ceda06bd1efb1ae",
     "yt-dlp.exe": "33121d192d706e62f684a06f80918e3f3a8ba52ac3a65213b6951c39c7d9f555",
-    "ffmpeg.exe": "434d6345c788d3bd18f16dc8480e75400cee50635e029c8e82565637a08cc515"
+    "ffmpeg.exe": "f9489bb45c03d689291c684197b4d20dee5ff9ce968c383f33633dd298a56238"
   },
   "ffmpeg": "ffmpeg version 8.1.1 Copyright (c) 2000-2026 the FFmpeg developers"
 }
