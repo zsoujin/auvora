@@ -13,7 +13,7 @@ metadata = json.loads(subprocess.check_output([
     'cargo', 'metadata', '--manifest-path', 'src-tauri/Cargo.toml',
     '--filter-platform', 'x86_64-pc-windows-msvc', '--locked', '--offline',
     '--format-version', '1',
-], text=True))
+], text=True, encoding='utf-8'))
 locked = tomllib.loads(Path('src-tauri/Cargo.lock').read_text(encoding='utf-8'))
 checksums = {(p['name'], p['version']): p.get('checksum') for p in locked['package']}
 output = root / 'release/artifacts'
