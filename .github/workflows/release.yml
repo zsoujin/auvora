@@ -64,7 +64,7 @@ jobs:
             $hash = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLower()
             "$hash  $($_.Name)"
           } | Set-Content release/artifacts/SHA256SUMS.txt -Encoding ascii
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         with:
           name: windows-release-review
           path: release/artifacts/
